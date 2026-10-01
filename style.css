@@ -1,0 +1,52 @@
+:root{--bg:#ffffff;--bg-alt:#f4f6f5;--text:#14201f;--muted:#55625f;--line:#dde3e1;--brand:#0f3d3e;--accent:#1f7a6d;--on-brand:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1514;--bg-alt:#152020;--text:#e8eeec;--muted:#a3b0ad;--line:#26332f;--brand:#7fc8b8;--accent:#7fc8b8;--on-brand:#0e1514}}
+:root[data-theme="dark"]{--bg:#0e1514;--bg-alt:#152020;--text:#e8eeec;--muted:#a3b0ad;--line:#26332f;--brand:#7fc8b8;--accent:#7fc8b8;--on-brand:#0e1514}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:400;letter-spacing:.32em;font-size:19px;color:var(--brand);text-decoration:none}
+.logo svg{width:24px;height:26px;flex:none}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:20px}
+nav a:hover{color:var(--text)}
+.hero{padding:88px 0 72px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent);margin:0 0 16px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:0 0 20px;max-width:780px;letter-spacing:-.02em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:640px;margin:0 0 32px}
+.btn{display:inline-block;background:var(--brand);color:var(--on-brand);padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--bg-alt)}
+h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 12px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 40px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{border:1px solid var(--line);border-radius:10px;padding:28px;background:var(--bg)}
+.card h3{margin:0 0 10px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.num{display:inline-block;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:14px}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font-size:12px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.steps b{display:block;font-size:15px;margin-bottom:6px}
+.steps span{font-size:14px;color:var(--muted)}
+.principles{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 40px;margin:0;padding:0;list-style:none}
+.principles li{padding-left:22px;position:relative;color:var(--muted)}
+.principles li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.principles strong{color:var(--text)}
+.contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.contact p{margin:0;color:var(--muted)}
+.channels{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.phone{color:var(--text);text-decoration:none;font-size:17px}
+.wa{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600}
+.mail{font-size:clamp(18px,2.6vw,22px);font-weight:600;color:var(--brand);text-decoration:none;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr);row-gap:24px}.principles{grid-template-columns:1fr}nav{display:none}.hero{padding:56px 0 48px}section{padding:56px 0}}
+.lang{display:flex;gap:4px;margin-left:24px}
+.lang a{margin:0;padding:4px 8px;border:1px solid var(--line);border-radius:6px;font-size:12px;font-weight:600;color:var(--muted);text-decoration:none}
+.lang a[aria-current=true]{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.right{display:flex;align-items:center}
+@media (max-width:860px){.lang{margin-left:0}}
+:lang(zh-Hans) body,:lang(zh-Hans){font-family:Inter,"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif}
+:lang(zh-Hans) h1{letter-spacing:0}
