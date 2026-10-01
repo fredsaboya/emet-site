@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EMET — Global Sourcing &amp; Trade Intelligence</title>
+<meta name="description" content="EMET identifies global sourcing opportunities and turns them into executable transactions: international sourcing, supplier validation and landed-cost analysis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f3d3e'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='17' text-anchor='middle' fill='%23fff'%3EE%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#ffffff;--bg-alt:#f4f6f5;--text:#14201f;--muted:#55625f;--line:#dde3e1;--brand:#0f3d3e;--accent:#1f7a6d;--on-brand:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1514;--bg-alt:#152020;--text:#e8eeec;--muted:#a3b0ad;--line:#26332f;--brand:#7fc8b8;--accent:#7fc8b8;--on-brand:#0e1514}}
+:root[data-theme="dark"]{--bg:#0e1514;--bg-alt:#152020;--text:#e8eeec;--muted:#a3b0ad;--line:#26332f;--brand:#7fc8b8;--accent:#7fc8b8;--on-brand:#0e1514}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:700;letter-spacing:.14em;font-size:20px;color:var(--brand);text-decoration:none}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:20px}
+nav a:hover{color:var(--text)}
+.hero{padding:88px 0 72px}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--accent);margin:0 0 16px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:0 0 20px;max-width:780px;letter-spacing:-.02em}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:640px;margin:0 0 32px}
+.btn{display:inline-block;background:var(--brand);color:var(--on-brand);padding:12px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+section.alt{background:var(--bg-alt)}
+h2{font-size:clamp(24px,3.4vw,32px);margin:0 0 12px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 40px;max-width:640px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{border:1px solid var(--line);border-radius:10px;padding:28px;background:var(--bg)}
+.card h3{margin:0 0 10px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.num{display:inline-block;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;counter-reset:s}
+.steps li{counter-increment:s;border-top:3px solid var(--accent);padding-top:14px}
+.steps li::before{content:counter(s,decimal-leading-zero);display:block;font-size:12px;font-weight:700;color:var(--accent);margin-bottom:6px}
+.steps b{display:block;font-size:15px;margin-bottom:6px}
+.steps span{font-size:14px;color:var(--muted)}
+.principles{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 40px;margin:0;padding:0;list-style:none}
+.principles li{padding-left:22px;position:relative;color:var(--muted)}
+.principles li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:8px;border-radius:2px;background:var(--accent)}
+.principles strong{color:var(--text)}
+.contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px}
+.contact p{margin:0;color:var(--muted)}
+.channels{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.phone{color:var(--text);text-decoration:none;font-size:17px}
+.wa{display:inline-block;border:1px solid var(--accent);color:var(--accent);padding:6px 14px;border-radius:6px;text-decoration:none;font-size:14px;font-weight:600}
+.mail{font-size:clamp(18px,2.6vw,22px);font-weight:600;color:var(--brand);text-decoration:none;word-break:break-all}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr);row-gap:24px}.principles{grid-template-columns:1fr}nav{display:none}.hero{padding:56px 0 48px}section{padding:56px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <a class="logo" href="#">EMET</a>
+ <nav><a href="#services">Services</a><a href="#process">Process</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+ <p class="eyebrow">Global Sourcing &amp; Trade Intelligence</p>
+ <h1>We identify global sourcing opportunities and turn them into executable transactions.</h1>
+ <p class="lead">EMET connects demand in one market with qualified counterparties in another. We find and validate suppliers and buyers, request and compare quotations, and calculate the real landed cost before any commitment is made.</p>
+ <a class="btn" href="#contact">Discuss an opportunity</a>
+</div></div>
+
+<section id="services"><div class="wrap">
+ <h2>What we do</h2>
+ <p class="sub">Three disciplines, applied to each product and each trade lane.</p>
+ <div class="grid">
+  <div class="card"><span class="num">01</span><h3>International Sourcing</h3><p>We map where a product is made and traded, using official trade statistics, and identify manufacturers, exporters and importers on both sides of the transaction.</p></div>
+  <div class="card"><span class="num">02</span><h3>Supplier Validation</h3><p>We confirm legal identity, product scope, certifications and official commercial channels before contact. Evidence is recorded with its source and date.</p></div>
+  <div class="card"><span class="num">03</span><h3>Landed-Cost Analysis</h3><p>We build the full cost to destination: product price, freight, insurance, duties, taxes and port fees. The decision rests on real numbers, not on the price list.</p></div>
+ </div>
+</div></section>
+
+<section id="process" class="alt"><div class="wrap">
+ <h2>How a transaction moves</h2>
+ <p class="sub">Each step produces a documented output that the next step depends on.</p>
+ <ol class="steps">
+  <li><b>Opportunity</b><span>Product, volume, destination and target price.</span></li>
+  <li><b>Supplier Search</b><span>Qualified counterparties from trade data and research.</span></li>
+  <li><b>Validation</b><span>Identity, capability and official channels confirmed.</span></li>
+  <li><b>RFQ</b><span>Standardised requests, in the counterparty's language.</span></li>
+  <li><b>Landed Cost</b><span>Quotes compared on a full delivered-cost basis.</span></li>
+  <li><b>Transaction</b><span>Sample, order, documentation and follow-up.</span></li>
+ </ol>
+</div></section>
+
+<section id="approach"><div class="wrap">
+ <h2>Our approach</h2>
+ <p class="sub">Credibility comes from method. These rules apply to every engagement.</p>
+ <ul class="principles">
+  <li><strong>Official sources first.</strong> Tariffs, regulations and trade data come from government and customs publications.</li>
+  <li><strong>Company channels only.</strong> We contact suppliers and buyers through their published commercial channels.</li>
+  <li><strong>Sample before volume.</strong> A first order is preceded by a sample or a trial shipment.</li>
+  <li><strong>Nothing assumed.</strong> Where a fact cannot be verified, the report says so.</li>
+ </ul>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap contact">
+ <div>
+  <h2>Contact</h2>
+  <p>Frederico Saboya, Founder · Fortaleza, Brazil</p>
+ </div>
+ <div class="channels">
+  <a class="mail" href="mailto:frederico@emettrade.com">frederico@emettrade.com</a>
+  <a class="phone" href="tel:+5585987363460">+55 85 98736-3460</a>
+  <a class="wa" href="https://wa.me/5585987363460" target="_blank" rel="noopener">WhatsApp</a>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 EMET · Global Sourcing &amp; Trade Intelligence</div></footer>
+</body>
+</html>
